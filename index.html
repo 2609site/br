@@ -1,0 +1,853 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content=""><title>BR</title><style>:root{--deep:#29675c;--lime:#d6ee7a;--paper:#f2f2f2;--ink:#2f3b40;--muted:#66706f;--dark:#0c1406;--signal:#f04b48;--line:#d5dfdb;--shadow:0 24px 60px rgba(15,23,42,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Inter Tight",Inter,Arial,sans-serif;line-height:1.58;-webkit-font-smoothing:antialiased;overflow-x:hidden}.wrap{width:min(1240px,calc(100% - 48px));margin:auto}.topbar{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 8px 30px rgba(15,23,42,.04)}.topbar>.wrap{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{font-family:"Arial Narrow",Impact,sans-serif;font-size:1.22rem;font-weight:900;letter-spacing:.035em;text-transform:uppercase;color:var(--deep);text-decoration:none;line-height:1}.nav{display:flex;gap:23px;align-items:center;font-size:.76rem;font-weight:850;letter-spacing:.04em;text-transform:uppercase;color:var(--deep)}.nav a{color:inherit;text-decoration:none;position:relative;padding:30px 0 26px;transition:.18s ease}.nav a:after{content:"";position:absolute;left:0;right:100%;bottom:20px;height:3px;background:var(--signal);transition:.2s ease}.nav a:hover{color:var(--signal)}.nav a:hover:after{right:0}.nav-toggle,.mobile-nav{display:none}.hero{min-height:720px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;left:-210px;bottom:-300px;background:rgba(214,238,122,.16)}.hero:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;left:45%;top:80px;border:28px solid rgba(214,238,122,.18)}.hero-grid,.section-grid{display:grid;grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);min-height:720px;align-items:stretch}.section-copy{display:flex;flex-direction:column;justify-content:center;padding:86px 68px 86px 0;position:relative;z-index:2}.hero .section-copy:before{content:"DESTAQUE";display:inline-flex;align-self:flex-start;margin-bottom:20px;padding:8px 13px;background:var(--lime);color:var(--deep);border-radius:999px;font-size:.68rem;font-weight:900;letter-spacing:.15em}.hero h1,.section h2,.text-panel strong{font-family:"Arial Narrow",Impact,"Roboto Condensed",sans-serif;text-transform:uppercase}.hero h1{font-size:clamp(4.2rem,8vw,8.1rem);line-height:.8;letter-spacing:-.04em;margin:0 0 28px;font-weight:900;max-width:780px}.body-copy{font-size:clamp(1.03rem,1.45vw,1.23rem);max-width:690px;opacity:.92;margin-bottom:30px}.section-media{position:relative;min-height:560px;overflow:hidden;display:flex;align-items:stretch;justify-content:stretch;background:#173f38}.hero .section-media{clip-path:polygon(10% 0,100% 0,100% 100%,0 100%)}.section-media img,.section-media video{width:100%;height:100%;min-height:560px;object-fit:cover;display:block}.hero .section-media:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(41,103,92,.45),transparent 44%),linear-gradient(0deg,rgba(12,20,6,.25),transparent 48%)}.text-panel{margin:auto;width:min(86%,560px);padding:42px;border:0;background:var(--lime);color:var(--deep);box-shadow:var(--shadow);position:relative}.text-panel:before{content:"";position:absolute;right:-18px;top:-18px;width:66px;height:66px;border-radius:50%;background:var(--signal)}.text-panel span{display:block;text-transform:uppercase;font-size:.72rem;font-weight:900;letter-spacing:.14em;margin-bottom:18px}.text-panel strong{display:block;font-size:clamp(3rem,5.2vw,5.8rem);line-height:.82;letter-spacing:-.035em}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:13px 22px;border:2px solid var(--lime);border-radius:3px;text-decoration:none;font-size:.78rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;background:var(--lime);color:var(--dark);transition:.2s ease}.btn:hover{transform:translateY(-2px);background:#fff;border-color:#fff}.section{padding:0;position:relative}.section .section-grid{min-height:640px}.section .section-copy{padding:86px 68px 86px 0}.section:nth-of-type(even) .section-copy{order:2;padding:86px 0 86px 68px}.section:nth-of-type(even) .section-media{order:1}.kicker{display:inline-flex;align-self:flex-start;color:var(--deep);background:var(--lime);padding:7px 12px;border-radius:999px;font-size:.67rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase;margin-bottom:20px}.section h2{font-size:clamp(3.1rem,5vw,6.3rem);line-height:.84;margin:0 0 24px;font-weight:900;letter-spacing:-.035em;max-width:820px}.section .body-copy{font-size:1.02rem;max-width:700px}.section .actions .btn{background:var(--deep);border-color:var(--deep);color:#fff}.section .actions .btn:hover{background:var(--signal);border-color:var(--signal)}.empty-site{min-height:60vh;display:grid;place-items:center;text-align:center}footer{background:var(--dark);color:#edfbe2;padding:34px 0 44px;font-size:.84rem}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}section[id],header[id]{scroll-margin-top:84px}
+@media(max-width:980px){html{scroll-padding-top:68px}.wrap{width:min(100% - 34px,1240px)}.topbar>.wrap{min-height:68px}.nav{display:none}.nav-toggle{display:grid;place-items:center;border:0;background:var(--deep);color:#fff;width:44px;height:44px;border-radius:50%;font-size:1.25rem;cursor:pointer}.mobile-nav{display:none;padding:0 17px 15px;background:var(--paper)}.mobile-nav.open{display:grid}.mobile-nav a{color:var(--deep);text-decoration:none;padding:12px 0;border-top:1px solid var(--line);font-weight:850;text-transform:uppercase;font-size:.76rem}.hero,.hero-grid,.section .section-grid{min-height:auto}.hero-grid,.section-grid{grid-template-columns:1fr}.section-copy,.section .section-copy,.section:nth-of-type(even) .section-copy{order:2;padding:52px 0}.section-media,.section:nth-of-type(even) .section-media{order:1;min-height:0;height:min(82vw,500px)}.hero .section-media{clip-path:none}.section-media img,.section-media video{min-height:0;height:100%}.hero h1{font-size:clamp(3.6rem,14vw,6.6rem)}.section h2{font-size:clamp(3rem,11vw,5.4rem)}.text-panel{width:calc(100% - 34px);padding:32px}.btn{width:100%}.hero:after{display:none}section[id],header[id]{scroll-margin-top:68px}}
+@media(max-width:560px){.wrap{width:calc(100% - 24px)}.topbar>.wrap{min-height:62px}.brand{font-size:1rem;max-width:72%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.section-copy,.section .section-copy,.section:nth-of-type(even) .section-copy{padding:40px 0}.section-media,.section:nth-of-type(even) .section-media{height:min(92vw,410px)}.hero h1{font-size:clamp(3.1rem,17vw,5rem)}.section h2{font-size:clamp(2.8rem,14vw,4.4rem)}.body-copy{font-size:.97rem}.text-panel{padding:26px}.text-panel strong{font-size:clamp(2.7rem,14vw,4.5rem)}.text-panel:before{width:48px;height:48px;right:-10px;top:-10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.nav a,.nav a:after{transition:none}}
+
+@media(max-width:980px){.content-text .section-media{display:none}}
+</style><style>:root{--deep:#29675c;--lime:#d6ee7a;--paper:#f2f2f2}.nav a{font-size:0.700rem!important}.mobile-nav a{font-size:0.532rem!important}.brand.has-logo{display:inline-flex!important;align-items:center;justify-content:flex-start;text-decoration:none}.brand.has-logo:before{display:none!important}.site-brand-logo{display:block;width:auto;height:auto;max-width:min(210px,55vw);max-height:46px;object-fit:contain;object-position:left center}.topbar.logo-enlarged>.wrap{height:auto!important;min-height:70px!important;padding-top:8px!important;padding-bottom:8px!important}.section-text-scale{max-width:100%;transform-origin:left center}.section-subtitle{margin:.35rem 0 1.4rem;opacity:.78}.section-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;width:100%;margin-top:24px}.section-card{min-width:0;padding:20px;border:1px solid rgba(127,127,127,.28);border-radius:14px;background:rgba(127,127,127,.07);box-sizing:border-box}.section-card-icon{display:block;margin-bottom:12px;font-size:1.45rem;line-height:1}.section-card h3{margin:0 0 8px;color:inherit}.section-card-body{line-height:1.5}.section-card-highlight{outline:2px solid var(--lime);outline-offset:-2px}@media(max-width:820px){.section-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.section-card-grid{grid-template-columns:1fr}.section-card{padding:18px}}.section-image-custom{transform:scaleX(var(--section-image-scale-x,1)) scaleY(var(--section-image-scale-y,1));transform-origin:center center;object-fit:var(--section-image-fit,cover)!important}.content-image.image-only{min-height:0!important;padding:0!important}.content-image.image-only:before,.content-image.image-only:after{display:none!important}.content-image.image-only .wrap{width:100%!important;max-width:none!important;margin:0!important}.content-image.image-only .hero-grid,.content-image.image-only .section-grid{display:block!important;min-height:0!important}.content-image.image-only .section-copy{display:none!important}.content-image.image-only .section-media{display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important;width:100%!important;height:clamp(320px,56.25vw,780px)!important;min-height:0!important;padding:0!important;margin:0!important;clip-path:none!important}.content-image.image-only .section-media:before,.content-image.image-only .section-media:after{display:none!important}.content-image.image-only .section-media img.section-image-custom{width:var(--section-image-width,100%)!important;height:var(--section-image-height,100%)!important;min-height:0!important;max-width:none!important;max-height:none!important;transform:none!important;object-fit:var(--section-image-fit,cover)!important;object-position:center center!important;margin:auto!important;border-radius:0!important;border:0!important;box-shadow:none!important}.content-text.text-only .hero-grid,.content-text.text-only .section-grid{display:block!important;min-height:0!important}.content-text.text-only .section-copy,.content-text.text-only .section:nth-of-type(even) .section-copy{display:flex!important;width:100%!important;max-width:none!important;min-width:0!important;order:initial!important;padding-left:0!important;padding-right:0!important}.content-text.text-only .section-media{display:none!important}.content-text.text-only .section-text-scale,.content-text.text-only .body-copy,.content-text.text-only h1,.content-text.text-only h2{width:100%!important;max-width:none!important}.content-text.text-only .body-copy{white-space:normal!important}.column-layout-custom .section-left{grid-column:1!important;order:1!important}.column-layout-custom .section-right{grid-column:2!important;order:2!important}.column-layout-custom .section-copy.section-left{padding-left:0!important;padding-right:clamp(28px,4vw,68px)!important}.column-layout-custom .section-copy.section-right{padding-left:clamp(28px,4vw,68px)!important;padding-right:0!important}.column-layout-custom .section-media.section-left,.column-layout-custom .section-media.section-right{order:inherit!important}.section-media.video-media{isolation:isolate}.section-media.video-media:before,.section-media.video-media:after{pointer-events:none!important}.section-media.video-media .section-video-custom{position:relative!important;z-index:5!important;pointer-events:auto!important}.sit-sites-credit{width:100%;margin-top:18px;padding-top:15px;border-top:1px solid rgba(127,127,127,.24);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;font-size:11px;line-height:1.35;opacity:.88}.sit-sites-credit a{color:inherit}.sit-sites-credit .sit-sites-create{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:6px 11px;border:1px solid currentColor;border-radius:999px;text-decoration:none;font-weight:800;font-size:10px;letter-spacing:.02em;white-space:nowrap}.sit-sites-credit .sit-sites-create:hover{opacity:.76}@media(max-width:980px){.column-layout-custom .hero-grid,.column-layout-custom .section-grid{display:grid!important;grid-template-columns:1fr!important}.column-layout-custom .hero-grid>.section-left,.column-layout-custom .section-grid>.section-left{grid-column:1!important;grid-row:auto!important;order:1!important}.column-layout-custom .hero-grid>.section-right,.column-layout-custom .section-grid>.section-right{grid-column:1!important;grid-row:auto!important;order:2!important}.column-layout-custom .section-copy.section-left,.column-layout-custom .section-copy.section-right{padding-left:0!important;padding-right:0!important}.content-text.column-layout-custom .section-media.section-left,.content-text.column-layout-custom .section-media.section-right{display:flex!important}}@media(max-width:560px){.site-brand-logo{max-width:min(170px,68vw);max-height:38px}.topbar.logo-enlarged>.wrap{height:auto!important;min-height:56px!important;padding-top:7px!important;padding-bottom:7px!important}.sit-sites-credit{font-size:10px;gap:8px}.sit-sites-credit .sit-sites-create{min-height:32px}}</style><style id="sit-sites-custom-css">/* =========================================================
+   TOP BAR — PREMIUM / RESPONSIVA
+   ========================================================= */
+
+.topbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+
+    width: 100% !important;
+    height: 78px !important;
+    min-height: 78px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #a92720 0%,
+            #c0392b 20%,
+            #c63d30 50%,
+            #c0392b 80%,
+            #a92720 100%
+        ) !important;
+
+    border: 0 !important;
+    border-bottom: 3px solid #f4b900 !important;
+
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, .22),
+        inset 0 1px 0 rgba(255, 255, 255, .08) !important;
+
+    overflow: hidden !important;
+}
+
+
+/* =========================================================
+   ESCONDE O CONTEÚDO ORIGINAL
+   ========================================================= */
+
+.topbar > .wrap,
+.topbar > .mobile-nav {
+    display: none !important;
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+.topbar::before {
+    content:
+        "★\00A0 OCULTAÇÃO DE PATRIMÔNIO   ★\00A0 250 FUNCIONÁRIOS FANTASMAS   ★\00A0 OPERAÇÃO SEM REFINO"
+        "\A"
+        "★\00A0 CADEIRA DE VOLTA, MEMÓRIA CURTA   ★\00A0 OCULTAÇÃO DE PATRIMÔNIO   ★\00A0 250 FUNCIONÁRIOS FANTASMAS";
+
+    position: absolute !important;
+    inset: 0 !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    height: 75px !important;
+
+    padding: 10px 22px 7px !important;
+
+    box-sizing: border-box !important;
+
+    color: #ffffff !important;
+
+    font-family:
+        "Arial Narrow",
+        "Roboto Condensed",
+        Arial,
+        Helvetica,
+        sans-serif !important;
+
+    font-size: 14px !important;
+    font-weight: 900 !important;
+
+    line-height: 28px !important;
+    letter-spacing: 1.2px !important;
+
+    text-align: center !important;
+    text-transform: uppercase !important;
+
+    white-space: pre-line !important;
+
+    text-shadow:
+        0 1px 1px rgba(0,0,0,.35) !important;
+
+    z-index: 2 !important;
+}
+
+
+/* =========================================================
+   BRILHO SUPERIOR
+   ========================================================= */
+
+.topbar::after {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 45% !important;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,.10),
+            rgba(255,255,255,0)
+        ) !important;
+
+    pointer-events: none !important;
+
+    z-index: 1 !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .topbar {
+        height: 90px !important;
+        min-height: 90px !important;
+    }
+
+    .topbar::before {
+        height: 87px !important;
+
+        padding: 10px 14px 8px !important;
+
+        font-size: 11px !important;
+        line-height: 30px !important;
+        letter-spacing: .55px !important;
+
+        white-space: pre-line !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   Compacto, 3 linhas, sem estrela órfã
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .topbar {
+        height: 103px !important;
+        min-height: 103px !important;
+
+        background:
+            linear-gradient(
+                135deg,
+                #a92720 0%,
+                #c0392b 48%,
+                #b42e24 100%
+            ) !important;
+
+        border-bottom: 3px solid #f4b900 !important;
+
+        box-shadow:
+            0 4px 16px rgba(0,0,0,.25),
+            inset 0 1px 0 rgba(255,255,255,.09) !important;
+    }
+
+
+    .topbar::before {
+        content:
+            "★\00A0 OCULTAÇÃO DE PATRIMÔNIO   ★\00A0 250 FUNCIONÁRIOS FANTASMAS"
+            "\A"
+            "★\00A0 OPERAÇÃO SEM REFINO   ★\00A0 CADEIRA DE VOLTA, MEMÓRIA CURTA"
+            "\A"
+            "★\00A0 OCULTAÇÃO DE PATRIMÔNIO   ★\00A0 250 FUNCIONÁRIOS FANTASMAS";
+
+        position: absolute !important;
+        inset: 0 !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        height: 100px !important;
+
+        padding: 9px 7px 7px !important;
+
+        box-sizing: border-box !important;
+
+        color: #ffffff !important;
+
+        font-family:
+            "Arial Narrow",
+            "Roboto Condensed",
+            Arial,
+            Helvetica,
+            sans-serif !important;
+
+        font-size: clamp(9.5px, 2.65vw, 11.5px) !important;
+        font-weight: 900 !important;
+
+        line-height: 27px !important;
+        letter-spacing: .15px !important;
+
+        text-align: center !important;
+        text-transform: uppercase !important;
+
+        /*
+           Permite organizar as frases nas 3 linhas,
+           mas não separa a estrela da palavra seguinte.
+        */
+        white-space: pre-line !important;
+
+        transform: none !important;
+
+        text-shadow:
+            0 1px 1px rgba(0,0,0,.38) !important;
+
+        z-index: 2 !important;
+    }
+
+
+    .topbar::after {
+        height: 35% !important;
+
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(255,255,255,.08),
+                transparent
+            ) !important;
+    }
+}
+
+
+/* =========================================================
+   CELULARES MENORES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .topbar {
+        height: 106px !important;
+        min-height: 106px !important;
+    }
+
+    .topbar::before {
+        height: 103px !important;
+
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+
+        font-size: 9px !important;
+        line-height: 28px !important;
+        letter-spacing: 0 !important;
+    }
+}
+
+/* =========================================================
+   CARD PRINCIPAL
+   ========================================================= */
+
+html body .section-copy.section-left {
+    position: relative !important;
+
+    background: #10291c !important;
+
+    /* Removemos o border e criamos a faixa separadamente */
+    border: none !important;
+    border-radius: 12px !important;
+
+    padding: 30px 32px 30px 42px !important;
+
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+
+    box-sizing: border-box !important;
+    box-shadow: none !important;
+
+    overflow: hidden !important;
+}
+
+
+/* =========================================================
+   FAIXA VERMELHA DA ESQUERDA
+   ========================================================= */
+
+html body .section-copy.section-left::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 6px !important;
+    height: 100% !important;
+
+    background: #cf3b2f !important;
+
+    display: block !important;
+}
+
+
+/* =========================================================
+   GARANTE QUE TODO O CONTEÚDO INTERNO RESPEITE O RECUO
+   ========================================================= */
+
+html body .section-copy.section-left > * {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+
+    margin-left: 20px !important;
+    color:white!important;
+    transform: none !important;
+
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Caso o template tenha wrappers internos */
+html body .section-copy.section-left .copy-inner,
+html body .section-copy.section-left .section-inner,
+html body .section-copy.section-left .content,
+html body .section-copy.section-left .section-content {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+
+    position: relative !important;
+    left: auto !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   TÍTULOS
+   ========================================================= */
+
+html body .section-copy.section-left h1,
+html body .section-copy.section-left h2,
+html body .section-copy.section-left h3 {
+    color: #f4b900 !important;
+
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+
+    letter-spacing: 1px !important;
+    line-height: 1.15 !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+}
+
+
+/* Garante que spans dentro do título também sejam amarelos */
+html body .section-copy.section-left h1 *,
+html body .section-copy.section-left h2 *,
+html body .section-copy.section-left h3 * {
+    color: #f4b900 !important;
+}
+
+
+/* =========================================================
+   TEXTO NORMAL — SEMPRE BRANCO/CINZA CLARO
+   ========================================================= */
+
+html body .section-copy.section-left p,
+html body .section-copy.section-left li,
+html body .section-copy.section-left small,
+html body .section-copy.section-left .section-text,
+html body .section-copy.section-left .section-description {
+    color: #e4e7df !important;
+
+    font-size: 17px !important;
+    font-weight: 600 !important;
+
+    line-height: 1.55 !important;
+    letter-spacing: .5px !important;
+}
+
+
+/* Corrige spans, strong, em etc. que estejam herdando vermelho */
+html body .section-copy.section-left p *,
+html body .section-copy.section-left li *,
+html body .section-copy.section-left small *,
+html body .section-copy.section-left .section-text *,
+html body .section-copy.section-left .section-description * {
+    color: #e4e7df !important;
+}
+
+
+/* Parágrafos */
+html body .section-copy.section-left p {
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+}
+
+
+/* =========================================================
+   KICKER — SOMENTE ELE FICA VERMELHO
+   ========================================================= */
+
+html body .section-copy.section-left .kicker,
+html body .kicker {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    background: #c93a2e !important;
+    color: #ffffff !important;
+
+    border: none !important;
+    border-radius: 9px !important;
+
+    padding: 16px 20px !important;
+
+    margin-top: 18px !important;
+    margin-bottom: 8px !important;
+
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+
+    line-height: 1.45 !important;
+    letter-spacing: .3px !important;
+
+    text-transform: none !important;
+
+    position: relative !important;
+    left: auto !important;
+
+    transform: none !important;
+}
+
+
+/* Tudo que estiver dentro da kicker continua branco */
+html body .section-copy.section-left .kicker *,
+html body .kicker * {
+    color: #ffffff !important;
+}
+
+
+/* Remove enfeites antigos do template */
+html body .kicker::before,
+html body .kicker::after {
+    display: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    html body .section-copy.section-left {
+        padding-top: 22px !important;
+        padding-right: 20px !important;
+        padding-bottom: 22px !important;
+
+        /* espaço entre faixa vermelha e conteúdo */
+        padding-left: 30px !important;
+
+        border-radius: 10px !important;
+    }
+
+
+    html body .section-copy.section-left::before {
+        width: 5px !important;
+    }
+
+
+    html body .section-copy.section-left h1,
+    html body .section-copy.section-left h2,
+    html body .section-copy.section-left h3 {
+        font-size: 24px !important;
+        line-height: 1.15 !important;
+    }
+
+
+    html body .section-copy.section-left p,
+    html body .section-copy.section-left li,
+    html body .section-copy.section-left small,
+    html body .section-copy.section-left .section-text,
+    html body .section-copy.section-left .section-description {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+
+
+    html body .kicker {
+        padding: 14px 16px !important;
+
+        font-size: 14px !important;
+        line-height: 1.45 !important;
+    }
+}
+
+/* =========================================================
+   SIT SITES — GRADE DE CARDS
+   Visual semelhante à referência
+   ========================================================= */
+
+
+/* FUNDO DA SEÇÃO */
+.section:has(.section-text-cards),
+.hero:has(.section-text-cards) {
+    background: #071c12 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   ÁREA GERAL DO CONTEÚDO
+   ========================================================= */
+
+.section-text-cards {
+    width: 100% !important;
+    max-width: 1050px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding: 55px 0 60px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   TÍTULO PRINCIPAL
+   ========================================================= */
+
+.section-text-cards .section-heading {
+    color: #f1f3ef !important;
+
+    text-align: center !important;
+
+    font-size: 46px !important;
+    font-weight: 900 !important;
+
+    line-height: 1.05 !important;
+    letter-spacing: 1px !important;
+
+    text-transform: uppercase !important;
+
+    margin: 0 0 10px !important;
+
+    max-width: none !important;
+}
+
+
+/* =========================================================
+   SUBTÍTULO
+   ========================================================= */
+
+.section-text-cards .section-subtitle {
+    display: block !important;
+
+    color: #365541 !important;
+
+    text-align: center !important;
+
+    font-size: 29px !important;
+    font-weight: 900 !important;
+
+    line-height: 1.15 !important;
+    letter-spacing: .5px !important;
+
+    margin: 0 0 34px !important;
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   GRADE
+   ========================================================= */
+
+.section-text-cards .section-card-grid {
+    display: grid !important;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 18px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   CARD NORMAL
+   ========================================================= */
+
+.section-text-cards .section-card {
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-width: 0 !important;
+    min-height: 215px !important;
+
+    padding: 27px 22px !important;
+
+    background: #10291c !important;
+
+    border: 1px solid #22492f !important;
+    border-radius: 10px !important;
+
+    box-shadow: none !important;
+    outline: none !important;
+
+    box-sizing: border-box !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   ÍCONE
+   ========================================================= */
+
+.section-text-cards .section-card-icon {
+    display: block !important;
+
+    margin: 0 0 15px !important;
+
+    font-size: 27px !important;
+    line-height: 1 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   TÍTULO DE CADA CARD
+   ========================================================= */
+
+.section-text-cards .section-card h3 {
+    color: #f0f2ed !important;
+
+    font-size: 19px !important;
+    font-weight: 900 !important;
+
+    line-height: 1.22 !important;
+    letter-spacing: .2px !important;
+
+    margin: 0 0 9px !important;
+
+    text-transform: none !important;
+}
+
+
+/* =========================================================
+   TEXTO DE CADA CARD
+   ========================================================= */
+
+.section-text-cards .section-card-body {
+    color: #d8ddd7 !important;
+
+    font-size: 14px !important;
+    font-weight: 650 !important;
+
+    line-height: 1.45 !important;
+    letter-spacing: .25px !important;
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   CARD MARCADO COMO "DESTAQUE"
+   ========================================================= */
+
+.section-text-cards .section-card-highlight {
+    background: #bd3024 !important;
+
+    border-color: #bd3024 !important;
+
+    outline: none !important;
+
+    color: #ffffff !important;
+
+    justify-content: center !important;
+}
+
+
+/* Oculta o ícone do destaque se você quiser o mesmo
+   estilo limpo do último card da referência */
+.section-text-cards .section-card-highlight .section-card-icon {
+    display: none !important;
+}
+
+
+/* Título do destaque */
+.section-text-cards .section-card-highlight h3 {
+    color: #ffffff !important;
+}
+
+
+/* Texto do destaque */
+.section-text-cards .section-card-highlight .section-card-body {
+    color: #ffffff !important;
+
+    font-size: 17px !important;
+    font-weight: 800 !important;
+
+    line-height: 1.42 !important;
+}
+
+
+/* =========================================================
+   REMOVE LIMITAÇÕES DO TEMPLATE
+   ========================================================= */
+
+.content-text.text-only .section-text-cards {
+    width: 100% !important;
+    max-width: 1050px !important;
+}
+
+
+.content-text.text-only .section-copy {
+    width: 100% !important;
+
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .section-text-cards {
+        padding: 45px 0 50px !important;
+    }
+
+    .section-text-cards .section-heading {
+        font-size: 36px !important;
+    }
+
+    .section-text-cards .section-subtitle {
+        font-size: 24px !important;
+    }
+
+    .section-text-cards .section-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .section-text-cards {
+        padding: 34px 0 38px !important;
+    }
+
+    .section-text-cards .section-heading {
+        font-size: 28px !important;
+
+        line-height: 1.1 !important;
+
+        margin-bottom: 8px !important;
+    }
+
+    .section-text-cards .section-subtitle {
+        font-size: 19px !important;
+
+        line-height: 1.2 !important;
+
+        margin-bottom: 26px !important;
+    }
+
+    .section-text-cards .section-card-grid {
+        grid-template-columns: 1fr !important;
+
+        gap: 14px !important;
+    }
+
+    .section-text-cards .section-card {
+        min-height: 0 !important;
+
+        padding: 22px 20px !important;
+    }
+
+    .section-text-cards .section-card h3 {
+        font-size: 18px !important;
+    }
+
+    .section-text-cards .section-card-body {
+        font-size: 14px !important;
+    }
+
+    .section-text-cards .section-card-highlight .section-card-body {
+        font-size: 16px !important;
+    }
+}
+
+/* =========================================================
+   ESPAÇAMENTO BOTÃO COMPARTILHAR
+   ========================================================= */
+
+.section .actions .btn {
+margin-bottom: 10px !important;
+}
+
+.hero .section-copy:before {
+    content: "SERÁ PRESO!"!important;</style></head><body class="template-modern_green"><div class="topbar"><div class="wrap"><a class="brand" href="#bernardo-rossi-sofre-mais-uma-busca-e-apreensao-da-policia-federal-e-sera-preso" aria-label="AW">AW</a><nav class="nav" aria-label="Menu principal"><a href="#bernardo-rossi-sofre-mais-uma-busca-e-apreensao-da-policia-federal-e-sera-preso">Bernardo Rossi sofre mais uma busca e apreensão da POLÍCIA FEDERAL e SERÁ PRESO!</a><a href="#quem-e-ele">QUEM É ELE?</a><a href="#o-que-ele-fez">O QUE ELE FEZ?</a><a href="#quem-sou-eu">Quem sou eu</a><a href="#agenda-de-investigacao">AGENDA (DE INVESTIGAÇÃO)</a><a href="#espalhe-isso">ESPALHE ISSO!</a></nav><button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button></div><div class="mobile-nav"><a href="#bernardo-rossi-sofre-mais-uma-busca-e-apreensao-da-policia-federal-e-sera-preso">Bernardo Rossi sofre mais uma busca e apreensão da POLÍCIA FEDERAL e SERÁ PRESO!</a><a href="#quem-e-ele">QUEM É ELE?</a><a href="#o-que-ele-fez">O QUE ELE FEZ?</a><a href="#quem-sou-eu">Quem sou eu</a><a href="#agenda-de-investigacao">AGENDA (DE INVESTIGAÇÃO)</a><a href="#espalhe-isso">ESPALHE ISSO!</a></div></div><header class="hero section-index-0 content-text text-only" id="bernardo-rossi-sofre-mais-uma-busca-e-apreensao-da-policia-federal-e-sera-preso" style="--section-bg:#fa0000;--section-text:#fbff00;background:#fa0000;color:#fbff00"><div class="wrap"><div class="hero-grid"><div class="section-copy"><div class="section-text-scale section-text-body" style="zoom:0.70"><h1 class="section-heading">SEU VOTO PODE SER ANULADO!</h1><div class="section-subtitle">Bernardo Rossi sofre mais uma busca e apreensão da POLÍCIA FEDERAL e SERÁ PRESO!</div></div></div><div class="section-media" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><div class="text-panel"><span>Bernardo Rossi sofre mais uma busca e apreensão da POLÍCIA FEDERAL e SERÁ PRESO!</span><strong>SEU VOTO PODE SER ANULADO!</strong></div></div></div></div></header><section class="section section-index-1 content-image image-only" id="inicio" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy"><div class="section-text-scale section-text-body" style="zoom:1.00"><div class="kicker">Início</div><h2 class="section-heading">Sua marca em movimento</h2><div class="body-copy">Uma abertura clara e contemporânea para apresentar a empresa, o projeto ou a causa com personalidade.</div></div></div><div class="section-media" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/6542b.jpeg" alt="Sua marca em movimento" loading="lazy"></div></div></div></section><section class="section section-index-2 content-image column-layout-custom" id="quem-e-ele" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:0.70"><div class="kicker">QUEM É ELE?</div><h2 class="section-heading">BERNARDO ROSSI</h2><div class="body-copy">CANDIDATO A DEPUTADO FEDERAL É PROCURADO PELA POLÍCIA FEDERAL<br />
+Número: 250 (um para cada funcionário fantasma)<br />
+PRESENÇA QUE OCULTA, PATRIMÔNIO QUE SOME!<br />
+ ★ OCULTAÇÃO DE PATRIMÔNIO <br />
+ ★ 250 FANTASMAS <br />
+ ★ OPERAÇÃO SEM REFINO <br />
+ ★ CADEIRA DE VOLTA, MEMÓRIA CURTA</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/4crdwr4cr.jpeg" alt="BERNARDO ROSSI" loading="lazy"></div></div></div></section><section class="section section-index-3 content-image column-layout-custom" id="o-que-ele-fez" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:0.70"><div class="kicker">O QUE ELE FEZ?</div><h2 class="section-heading">A razão dele estar aqui</h2><div class="body-copy">A RESPONSABILIDADE QUE ELE REALMENTE ASSUMIU<br />
+Ele diz que política é assumir responsabilidades. E assumiu mesmo: pressionar técnicos ambientais para beneficiar a Refit, proteger o padrinho político Cláudio Castro e manter o nome dele nos registros de uma lancha de R$ 4 milhões e um helicóptero de R$ 1,8 milhão — nenhum no nome dele.<br />
+Quando a cidade precisou de gestão de verdade, ele estava ocupado protegendo outra coisa: o próprio patrimônio.</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/gm7uvhgm7uvhgm7u.jpeg" alt="A razão dele estar aqui" loading="lazy"></div></div></div></section><section class="section section-index-4 content-image column-layout-custom" id="quem-sou-eu" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:0.70"><div class="kicker">Quem sou eu</div><h2 class="section-heading">QUEM É BERNARDO ROSSI, DE VERDADE</h2><div class="body-copy">Ele fala do CIMOP como legado. Mas foi o próprio grupo político dele — com Hingo Hammes na prefeitura — que deixou a cidade sem nenhuma câmera de monitoramento por mais de dois meses, mesmo com alerta de chuva forte. O sistema foi desmobilizado, e o Ministério Público teve que entrar na Justiça para cobrar solução.<br />
+E até hoje nada foi feito.</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/Gemini_Generated_Image_lxh8dalxh8dalxh8.jpeg" alt="QUEM É BERNARDO ROSSI, DE VERDADE" loading="lazy"></div></div></div></section><section class="section section-index-5 content-image column-layout-custom" id="irresponsavel" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:1.00"><div class="kicker">irresponsável</div><h2 class="section-heading">VAMOS DESTRUIR ALGO JUNTOS</h2><div class="body-copy">Sem rio limpo, isso acontece logo em uma cidade que sofre tanto com alagamentos e que já perdeu tantas vidas com isso.</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/lkjho5425s.jpeg" alt="VAMOS DESTRUIR ALGO JUNTOS" loading="lazy"></div></div></div></section><section class="section section-index-6 content-text text-only" id="agenda-de-investigacao" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy"><div class="section-text-scale section-text-cards" style="zoom:0.70"><h2 class="section-heading">PRIORIDADES DE BERNARDO ROSSI</h2><div class="section-subtitle">minhas prioridades de verdade</div><div class="section-card-grid"><article class="section-card" data-card-index="1"><div class="section-card-icon" aria-hidden="true">🛡️</div><h3>Proteger Cláudio Castro</h3><div class="section-card-body">Defender o padrinho político, mesmo enquanto ele é investigado por corrupção, fraude e evasão de divisas.</div></article><article class="section-card" data-card-index="2"><div class="section-card-icon" aria-hidden="true">👻</div><h3>Chefiar 250 fantasmas</h3><div class="section-card-body">Sustentar funcionários fantasmas na folha, com dinheiro público, sem entregar serviço real à população.</div></article><article class="section-card" data-card-index="3"><div class="section-card-icon" aria-hidden="true">🛥️</div><h3>Ocultar patrimônio</h3><div class="section-card-body">Uma lancha de R$ 4 milhões, um helicóptero de R$ 1,8 milhão — quase R$ 6 milhões em bens, nenhum no nome dele.</div></article><article class="section-card" data-card-index="4"><div class="section-card-icon" aria-hidden="true">📉</div><h3>Ser o pior prefeito da história.</h3><div class="section-card-body">Isso até o mandado do meu pupilo Hingo Rossi me superar e ele ser o pior da história. <br />
+Eleito o pior prefeito de Petrópolis entre 2017 e 2020. Nada entregue à cidade.</div></article><article class="section-card" data-card-index="5"><div class="section-card-icon" aria-hidden="true">🎥</div><h3>Deixar a cidade sem monitoramento</h3><div class="section-card-body">Câmeras do CIMOP desligadas por meses sob o governo do seu afilhado político.</div></article><article class="section-card section-card-highlight" data-card-index="6"><div class="section-card-icon" aria-hidden="true">💰</div><h3>Ele é o candidato que mais recebeu fundo eleitoral.</h3><div class="section-card-body">Mais de 3 milhões de verba, e gastou dinheiro do povo em campanha, tentando enganá-lo de novo.<br />
+Vamos continuar assim? Chega de fantasma, chega de patrimônio sem explicação.</div></article></div></div></div><div class="section-media" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><div class="text-panel"><span>AGENDA (DE INVESTIGAÇÃO)</span><strong>PRIORIDADES DE BERNARDO ROSSI</strong></div></div></div></div></section><section class="section section-index-7 content-text text-only" id="meu-grupo-politico" style="--section-bg:#0c2d0d;--section-text:#f4b900;background:#0c2d0d;color:#f4b900"><div class="wrap"><div class="section-grid"><div class="section-copy"><div class="section-text-scale section-text-body" style="zoom:0.70"><div class="kicker">Meu grupo politico</div><h2 class="section-heading">esse é o meu grupo político sou completamente fiel a eles por eles faço tudo e listar e explicar cada um deles:</h2></div></div><div class="section-media" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><div class="text-panel"><span>Meu grupo politico</span><strong>esse é o meu grupo político sou completamente fiel a eles por eles faço tudo e listar e explicar cada um deles:</strong></div></div></div></div></section><section class="section section-index-8 content-image column-layout-custom" id="claudio-castro" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:1.00"><div class="kicker">Cláudio Castro</div><h2 class="section-heading">Cláudio Castro</h2><div class="body-copy">Esquema Refit: apuração sobre supostas fraudes fiscais e favorecimento ilegal à refinaria Refit (antiga Manguinhos) via isenções tributárias.   <br />
+<br />
+Indiciamento pela PF: a Polícia Federal indiciou formalmente o investigando por crimes de peculato e corrupção passiva decorrentes de desvios de recursos públicos estaduais.   <br />
+<br />
+Inelegibilidade no TSE: condenado pelo Tribunal Superior Eleitoral por abuso de poder político e econômico nas eleições de 2022, ficando inelegível por oito anos.   <br />
+<br />
+Caso Rioprevidência / Banco Master: investigação referente ao transporte de cerca de R$ 1 bilhão do fundo de pensão em letras financeiras do Banco Master.<br />
+<br />
+Cargas Fantasmas: apuração de irregularidades e contratações suspeitas por meio de folhas de pagamento do Ceperj e da UERJ.</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/CL-UDIO.jpeg" alt="Cláudio Castro" loading="lazy"></div></div></div></section><section class="section section-index-9 content-image column-layout-custom" id="baninho" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:1.00"><div class="kicker">Baninho</div><h2 class="section-heading">Baninho</h2><div class="body-copy">Atual vice-prefeito de Petrópolis e também foi vice-prefeito de Bernardo, naquela que era reconhecida até então como pior governo de Petrópolis — hoje algo de investigação da Polícia Federal e apostado como mais um dos elos do esquema de corrupção</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/baninho.jpg" alt="Baninho" loading="lazy"></div></div></div></section><section class="section section-index-10 content-image column-layout-custom" id="hingo-hammes" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:1.00"><div class="kicker">Hingo Hammes</div><h2 class="section-heading">Hingo Hammes</h2><div class="body-copy">SEU FANTOCHE, à frente da prefeitura de Petrópolis, está conseguindo até agora superar a incrível marca de Bernardo como pior prefeito da história. Mas todos sabemos que quem (des)governa de verdade é Rossi.</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/hingo.jpeg" alt="Hingo Hammes" loading="lazy"></div></div></div></section><section class="section section-index-11 content-image column-layout-custom" id="fred-procopio" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:1.00"><div class="kicker">Fred Procopio</div><h2 class="section-heading">Fred Procopio</h2><div class="body-copy">Foi quem propôs o aumento de 70% do próprio salário e do salário do prefeito Hingo Hammes e do vice Baninho – mesmo com a cidade em grave crise financeira</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/fred-procopio-.png" alt="Fred Procopio" loading="lazy"></div></div></div></section><section class="section section-index-12 content-image column-layout-custom" id="aloisio-barbosa" style="--section-bg:#0c2d0d;--section-text:#d73737;background:#0c2d0d;color:#d73737"><div class="wrap"><div class="section-grid"><div class="section-copy section-left"><div class="section-text-scale section-text-body" style="zoom:1.00"><div class="kicker">Aloisio Barbosa</div><h2 class="section-heading">Aloisio Barbosa</h2><div class="body-copy">Secretário do atual governo, votou a favor do reajuste de 70% do salário do prefeito e também teve seu salário reajustado, sendo um dos piores secretários de saúde já vistos na cidade.</div></div></div><div class="section-media section-right" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><img class="section-image-custom" src="assets/media/dr-aloisio-barbosa-assume-a-secretaria-de-saude-de-petropolis-1-.jpg" alt="Aloisio Barbosa" loading="lazy"></div></div></div></section><section class="section section-index-13 content-text text-only" id="espalhe-isso" style="--section-bg:#e9fa00;--section-text:#000000;background:#e9fa00;color:#000000"><div class="wrap"><div class="section-grid"><div class="section-copy"><div class="section-text-scale section-text-body" style="zoom:1.00"><div class="kicker">ESPALHE ISSO!</div><h2 class="section-heading">LEVE ESSA MENSAGEM PARA MAIS PESSOAS!</h2><div class="body-copy">Petrópolis não pode esquecer quem é Bernardo Rossi. Compartilhe essa página com sua família, seus vizinhos, seu grupo do trabalho.<br />
+LEVE ESSA MENSAGEM ANTES QUE BERNARDO ROSSI SEJA PRESO</div></div><div class="actions"><a class="btn" href="https://wa.me/" target="_blank" rel="noopener noreferrer" data-whatsapp-share>COMPARTILHE NO WHATSAPP</a></div></div><div class="section-media" style="--section-image-width:100%;--section-image-height:100%;--section-image-fit:cover;--section-image-scale-x:1.00;--section-image-scale-y:1.00;"><div class="text-panel"><span>ESPALHE ISSO!</span><strong>LEVE ESSA MENSAGEM PARA MAIS PESSOAS!</strong></div></div></div></div></section><script>const b=document.querySelector('.nav-toggle'),m=document.querySelector('.mobile-nav');if(b&&m){b.onclick=()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')};document.querySelectorAll('.mobile-nav a').forEach(a=>a.onclick=()=>{m.classList.remove('open');b.setAttribute('aria-expanded','false')})}const siteVideos=[...document.querySelectorAll('video[data-scroll-autoplay]')];const playVisibleVideo=v=>{if(v.ended){try{v.currentTime=0}catch(e){}}const p=v.play();if(p&&typeof p.catch==='function')p.catch(()=>{});};siteVideos.forEach(v=>{v.defaultMuted=true;v.muted=true;v.setAttribute('muted','');});if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{const v=entry.target;if(entry.isIntersecting&&entry.intersectionRatio>=.35){playVisibleVideo(v)}else{v.pause()}})},{threshold:[0,.35,.6]});siteVideos.forEach(v=>observer.observe(v));}else{siteVideos.forEach(playVisibleVideo);}document.querySelectorAll('a[data-whatsapp-share]').forEach(a=>a.addEventListener('click',()=>{let current=window.location.href;try{const u=new URL(current);u.hash='';current=u.href;}catch(err){}a.href='https://wa.me/?text='+encodeURIComponent('Confira esta página: '+current);}));</script></body></html>
